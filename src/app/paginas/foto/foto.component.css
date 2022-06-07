@@ -1,0 +1,22 @@
+img {
+  filter: grayscale(100%);
+  width: 240px;
+  transition: 300ms;
+}
+
+.card:hover img {
+  filter: grayscale(0%);
+}
+
+.card {
+  color:grey;
+
+  transition: 300ms;
+}
+
+.card:hover {
+  color:black;
+  border-color: rgb(255, 255, 255);
+}
+
+
