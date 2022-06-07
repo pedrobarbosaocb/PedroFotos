@@ -2,9 +2,6 @@
 
   <div class="col" *ngFor = "let foto of fotos; let i = index" style="padding:10px;">
 
-
-
-
     <div class="modal fade" id="teste" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -13,7 +10,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            ...
+            
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -25,13 +22,17 @@
     <div class="card text-white bg-dark" style="width: 15rem;">
       <img src="{{ foto.folder }}" class="card-img-top" alt="foto" style="padding: 10px;">
       <div class="card-body">
+
         <h5 class="card-title">{{ foto.date }}</h5>
+
         <hr>
+
         <p class="card-text">Foto {{ i + 1 }}</p>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#teste" (click) = "abrirModal(foto.folder)" >
           Ver foto em Modal
         </button>
       </div>
     </div>
+
   </div>
 </div>
