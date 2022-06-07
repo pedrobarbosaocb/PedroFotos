@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FotoComponent implements OnInit {
 
+  //imagem modelo (modal) - é somente a pasta/url vazia de uma imagem
   imagem : string = '';
-  
+
+  //banco de dados
   fotos = [
     { id:1, date:'12-05-22', folder:'../../../assets/fotos/IMG_1609.jpg' },
     { id:2, date:'12-05-22', folder:'../../../assets/fotos/IMG_3025.jpg' },
@@ -55,6 +57,7 @@ export class FotoComponent implements OnInit {
     { id:2, date:'12-05-22', folder:'https://picsum.photos/400?36' },
   ]
 
+  // altera a var imagem pela string colocada
   abrirModal(imagem : string) {
     this.imagem = imagem;
   }
